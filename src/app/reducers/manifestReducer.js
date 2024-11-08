@@ -131,7 +131,7 @@ function calculateCrewCut(clone) {
         let cut = parseFloat(crew.cut);
 
         // If the crew cut type is a percentage, re-calculate it.
-        if (crew.type === 'percentage') {
+        if (crew.type === 'Percentage %') {
             cut = Math.round(cut/100 * baseProfit);
         }
 
@@ -155,7 +155,7 @@ function addCrew(state) {
         name:     'Crew Member #'+(clone.crew.length+1),
         cut:      0,
         estimate: 0,
-        type:     'uec'
+        type:     'UEC'
     });
 
     return calculateCrewCut(calculateResults(clone));

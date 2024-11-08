@@ -29,7 +29,7 @@ class Crew extends React.Component {
             <div className="manifest__crew section">
                 <h3>Crew</h3>
                 <p>
-                    Crew expense calculations can be performed as a fixed price <em className="uec"></em> or percentage value. Percentage deductions are made on the 'base' profit calculation from buying and selling cargo (<em>totalSell - totalBuy</em>).
+                    Profit calculations can be a fixed price (<em className="UEC"></em>) or a Percentage (%).
                 </p>
                 <table id="crew" className="data-table">
                     <thead>
@@ -63,14 +63,14 @@ class Crew extends React.Component {
                                         field={field}
                                         labelledBy="crew-cut"
                                         cutType={crew.type}
-                                        types={['uec', 'percentage']}
+                                        types={['UEC', 'Percentage %']}
                                         handleChange={this.updateCrew.bind(this, 'cut', i)}
                                         handleError={this.handleError.bind(this)}
                                         setType={this.updateCrewType.bind(this, i)}
                                     />
                                 </td>
                                 <td width="20%">
-                                    <span className="uec">{crew.estimate}</span>
+                                    <span className="UEC">{crew.estimate}</span>
                                 </td>
                                 <td width="5%">
                                     <button
@@ -87,7 +87,7 @@ class Crew extends React.Component {
                         <tr>
                             <th>Totals:</th>
                             <td></td>
-                            <td><span className="uec">{this.props.scope.crewCut}</span></td>
+                            <td><span className="UEC">{this.props.scope.crewCut}</span></td>
                             <td></td>
                         </tr>
                     </tfoot>

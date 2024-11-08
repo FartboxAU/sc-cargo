@@ -1,7 +1,7 @@
 {
-  "name": "sc_trade_app",
-  "version": "0.0.3",
-  "description": "Trade Profit Calculator (client) for Star Citizen",
+  "name": "sc_trade_app_extended",
+  "version": "0.0.3a",
+  "description": "Profit Calculator for Star Citizen",
   "main": "index.js",
   "scripts": {
     "compile": "/usr/local/bin/babel -d libs/ src/app/util/",
